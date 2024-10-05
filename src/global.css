@@ -32,6 +32,16 @@
 
   */
 
+  /* color palette */
+
+  --oxford-blue: rgb(5, 32, 74);
+  --yale-blue: rgb(13, 59, 102);
+  --wisteria: rgb(180, 151, 214);
+  --silver: rgb(202, 188, 185);
+  --lavender: rgb(225, 226, 239);
+  --black: rgb(2, 2, 10);
+  /* palette */
+
   --font-color: rgb(44, 44, 44);
 
   --bg-color: rgb(255, 255, 255);
@@ -48,6 +58,7 @@
   --color-red-light: rgba(255, 0, 0, 0.5);
   --color-red: red;
   --color-red-dark: rgb(173, 54, 54);
+  --color-red-darker: rgb(153, 0, 0);
 
   --color-orange-light: orange;
   --color-orange: orange;
