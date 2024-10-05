@@ -5,7 +5,7 @@ import Navbar from '../../components/navbar/navbar';
 const CV: React.FC = () => {
   return (
     <div className={styles.CV}>
-      <h1 className={styles.title}>My CV!</h1>
+      <h1 className={styles.title}>My CV</h1>
       <Navbar />
     </div>
   );

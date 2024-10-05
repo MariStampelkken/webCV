@@ -11,6 +11,13 @@
 .title {
   font-size: 2rem;
   color: var(--font-color);
-  margin: 0; /* Remove default margin */
-  text-align: center;
+  margin: 2rem; /* Remove default margin */
+  text-align: left;
+  align-self: flex-start;
+}
+
+.pictures {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
