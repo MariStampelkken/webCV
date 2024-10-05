@@ -1,0 +1,49 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out elements */
+  align-items: center; /* Center items horizontally */
+  height: 100vh; /* Full viewport height */
+  padding: 2rem;
+  position: relative;
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--font-color);
+  margin: 0; /* Remove default margin */
+  text-align: center;
+}
+
+.illustration {
+  width: 600px;
+  height: auto;
+  margin-bottom: 0;
+  position: relative;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem; /* Smaller title size on smaller screens */
+  }
+
+  .illustration {
+    width: 80%; /* Increase the percentage width on smaller screens */
+    max-width: none; /* Remove the max-width restriction */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.25rem; /* Even smaller title size for very small screens */
+  }
+
+  .illustration {
+    width: 90%; /* Further increase width on extra small screens */
+  }
+
+  .navbar {
+    margin-bottom: 0.5rem; /* Adjust this value as needed */
+  }
+}

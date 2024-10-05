@@ -7,10 +7,10 @@ npm i
 npm run dev
 
 ## to run eslint and prettier:
+
 npm run lint
 npx prettier --write .
 
 ## to run test:
+
 npm run test
-
-
