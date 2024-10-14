@@ -6,18 +6,24 @@ import PictureBox from '../../components/pictureBox/pictureBox';
 const About: React.FC = () => {
   return (
     <div className={styles.about}>
-      <h1 className={styles.title}> About me </h1>
       <Navbar />
+      <h1 className={styles.title}> About me </h1>
+
+        <p className={styles.description1}>
+          ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe earum maiores corrupti doloribus tenetur architecto accusantium eligendi delectus natus quia quidem facilis dolores magni deserunt minima, impedit soluta quasi fugiat.
+        </p>
+        <p className={styles.description2}>
+          ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe earum maiores corrupti doloribus tenetur architecto accusantium eligendi delectus natus quia quidem facilis dolores magni deserunt minima, impedit soluta quasi fugiat.
+        </p>
+        <p className={styles.description1}>
+          ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe earum maiores corrupti doloribus tenetur architecto accusantium eligendi delectus natus quia quidem facilis dolores magni deserunt minima, impedit soluta quasi fugiat.
+        </p>
 
       <div className={styles.pictures}>
-        <PictureBox src="/src/polaroids/polaroid2.JPG" alt="Polaroid" />
-        <PictureBox src="/src/polaroids/polaroid1.JPG" alt="Polaroid" />
-        <PictureBox src="/src/polaroids/polaroid3.JPG" alt="Polaroid" />
+        <PictureBox src="/src/polaroids/polaroid11.JPG" alt="Polaroid" />
+        <PictureBox src="/src/polaroids/polaroid15.JPG" alt="Polaroid" />
+        <PictureBox src="/src/polaroids/polaroid14.JPG" alt="Polaroid" />
         <PictureBox src="/src/polaroids/polaroid4.JPG" alt="Polaroid" />
-        {/* <PictureBox src="/src/polaroids/polaroid5.JPG" alt="Polaroid" />
-      <PictureBox src="/src/polaroids/polaroid6.JPG" alt="Polaroid" />
-      <PictureBox src="/src/polaroids/polaroid7.JPG" alt="Polaroid" />
-      <PictureBox src="/src/polaroids/polaroid8.JPG" alt="Polaroid" /> */}
       </div>
     </div>
   );
