@@ -33,11 +33,12 @@
 
 .navbarLink:hover {
   color: var(--color-blue-dark);
-  text-shadow: 0 0 1px var(--color-blue-dark);
+  text-shadow: 0 0 1rem var(--color-blue-dark);
 }
 
 .activeLink {
   color: var(--color-blue-dark);
+  text-shadow: 0 0 1rem var(--silver);
 }
 
 /* Responsive Styles */
@@ -48,6 +49,8 @@
     left: 0; /* Align to the left */
     bottom: calc(80%); /* Adjust vertical position if needed */
     padding: 1rem 0;
+    font-size: medium;
+    top: 10%;
   }
 
   .navbarList {
@@ -57,7 +60,7 @@
 
   .navbarItem {
     margin-bottom: 0; /* Remove bottom margin when items are in a row */
-    margin-right: 1rem; /* Add right margin for spacing */
+    margin-right: 0.5rem; /* Add right margin for spacing */
   }
 }
 
@@ -70,6 +73,7 @@
     padding: 1rem 0;
     margin-top: 0;
     margin-bottom: 10rem;
+    font-size: small;
   }
 
   .navbarList {
@@ -79,6 +83,6 @@
 
   .navbarItem {
     margin-bottom: 0; /* Remove bottom margin when items are in a row */
-    margin-right: 1rem; /* Add right margin for spacing */
+    margin-right: 0; /* Reduce right margin for smaller spacing */
   }
 }
