@@ -9,7 +9,7 @@ interface PictureBoxProps {
 const PictureBox: React.FC<PictureBoxProps> = ({ src, alt }) => {
   return (
     <div className={styles.pictureBox}>
-      <img src={src} alt={alt} />
+      <img className={styles.picture} src={src} alt={alt} />
     </div>
   );
 };
