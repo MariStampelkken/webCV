@@ -1,0 +1,88 @@
+.navbar {
+  background-color: var(--bg-color);
+  padding: 1rem;
+  width: fit-content;
+  font-size: larger;
+  position: absolute; /* Position the navbar absolutely */
+  left: 50%; /* Start from the horizontal center */
+  transform: translateX(300%); /* Move it to the left of the illustration */
+  bottom: calc(65%);
+}
+
+.navbarList {
+  list-style-type: none; /* Remove bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex; /*Align items in a row */
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbarItem {
+  color: var(--font-color);
+  margin-bottom: 1rem;
+}
+
+.navbarLink {
+  text-decoration: none;
+  color: var(--font-color);
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.navbarLink:hover {
+  color: var(--color-blue-dark);
+  text-shadow: 0 0 1rem var(--color-blue-dark);
+}
+
+.activeLink {
+  color: var(--color-blue-dark);
+  text-shadow: 0 0 1rem var(--silver);
+}
+
+/* Responsive Styles */
+@media (max-width: 950px) {
+  .navbar {
+    width: 100%; /* Make navbar full-width on smaller screens */
+    transform: translateX(0); /* Reset the transform for smaller screens */
+    left: 0; /* Align to the left */
+    bottom: calc(80%); /* Adjust vertical position if needed */
+    padding: 1rem 0;
+    font-size: medium;
+    top: 10%;
+  }
+
+  .navbarList {
+    flex-direction: row; /* Change to horizontal layout on smaller screens */
+    justify-content: space-around; /* Space items evenly */
+  }
+
+  .navbarItem {
+    margin-bottom: 0; /* Remove bottom margin when items are in a row */
+    margin-right: 0.5rem; /* Add right margin for spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    width: 100%; /* Make navbar full-width on smaller screens */
+    transform: translateX(0); /* Reset the transform for smaller screens */
+    left: 0; /* Align to the left */
+    bottom: calc(65%); /* Adjust vertical position if needed */
+    padding: 1rem 0;
+    margin-top: 0;
+    margin-bottom: 10rem;
+    font-size: small;
+  }
+
+  .navbarList {
+    flex-direction: row; /* Change to horizontal layout on smaller screens */
+    justify-content: space-around; /* Space items evenly */
+  }
+
+  .navbarItem {
+    margin-bottom: 0; /* Remove bottom margin when items are in a row */
+    margin-right: 0; /* Reduce right margin for smaller spacing */
+  }
+}

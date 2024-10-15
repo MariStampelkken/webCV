@@ -1,0 +1,78 @@
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out elements */
+  align-items: center; /* Center items horizontally */
+  height: 100vh; /* Full viewport height */
+  padding: 2rem;
+  position: relative;
+}
+
+.title {
+  font-family: 'Special Elite', monospace;
+  font-size: 2.5rem;
+  color: var(--font-color);
+  text-shadow: 0 0 1rem var(--silver);
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  white-space: nowrap;
+  animation: typing 4s steps(30,end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+.undertitle{
+  font-family: 'Special Elite', monospace;
+  font-size: 1.5rem;
+  color: var(--font-color);
+  margin-left: 0;
+  text-align: left;
+  align-self: flex-start;
+  letter-spacing: 0.5rem;
+  white-space: nowrap;
+  animation: typing 4s steps(30,end), blink-caret 0.75s step-end infinite;
+} 
+
+
+.illustration {
+  width: 600px;
+  height: auto;
+  margin-bottom: 0;
+  position: relative;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.75rem;
+  }
+  .undertitle{
+    font-size: 1.25rem;
+  }
+
+  .illustration {
+    width: 80%; /* Increase the percentage width on smaller screens */
+    max-width: none; /* Remove the max-width restriction */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem; /* Even smaller title size for very small screens */
+  }
+  .undertitle{
+    font-size: 1rem;
+  }
+
+  .illustration {
+    width: 90%; /* Further increase width on extra small screens */
+  }
+
+  .navbar {
+    margin-bottom: 0.5rem; /* Adjust this value as needed */
+  }
+}

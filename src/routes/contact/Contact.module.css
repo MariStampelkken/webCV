@@ -1,0 +1,17 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out elements */
+  align-items: center; /* Center items horizontally */
+  height: 100vh; /* Full viewport height */
+  padding: 2rem;
+  position: relative;
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--font-color);
+  margin: 2rem; /* Remove default margin */
+  text-align: left;
+  align-self: flex-start;
+}
