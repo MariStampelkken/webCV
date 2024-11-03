@@ -15,3 +15,11 @@
   text-align: left;
   align-self: flex-start;
 }
+
+.illustrationLiz{
+  position: absolute;
+  bottom: 0rem;
+  right: 3rem;
+  width: 30%;
+  z-index: 0;
+}
