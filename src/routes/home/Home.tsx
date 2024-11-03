@@ -6,8 +6,9 @@ import Navbar from '../../components/navbar/navbar';
 const Home: React.FC = () => {
   return (
     <div className={styles.home}>
-      <h1 className={styles.title}>Mari</h1>
-      <h2 className={styles.undertitle}>welcome to my webpage! </h2>
+      <h1 className={styles.title}> Mari's webCV </h1>
+      <h2 className={styles.undertitle}>Welcome to my webpage!</h2>
+      <h3 className={styles.undertitle2}>I'm Mari!</h3>
       <img src={Portrait} alt="Portrait" className={styles.illustration} />
       <Navbar />
     </div>
