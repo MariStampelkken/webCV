@@ -7,6 +7,7 @@ const Contact: React.FC = () => {
     <div className={styles.contact}>
       <h1 className={styles.title}>Contact me</h1>
       <Navbar />
+      <img src="src/illustrations/LizWithScarf.png" alt="IllustrationOfLiz" className={styles.illustrationLiz} />
     </div>
   );
 };
