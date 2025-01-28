@@ -11,6 +11,19 @@ Please note, this is still a work in progress, and I’m continuously adding new
 - Vite: A build tool that aims to provide a faster and leaner development experience for modern web projects.
 - CSS Modules: A CSS file in which all class and animation names are scoped locally by default.
 
+## A look at the application
+
+Here are a few screenshots for you to view some of the application without having to run the application yourself:
+
+![screenshot of homepage](src/screenshots/homepage.png)
+
+![screenshot of about page](src/screenshots/aboutpage.png)
+
+![screenshot of cv page](src/screenshots/cvpage.png)
+
+![screenshot of contact page](src/screenshots/contactpage.png)
+
+
 ## Installation and Usage
 
 First clone the repository your prefered way.
