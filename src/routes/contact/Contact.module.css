@@ -1,19 +1,53 @@
 .contact {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Space out elements */
-  align-items: center; /* Center items horizontally */
-  height: 100vh; /* Full viewport height */
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
   padding: 2rem;
+  padding-top: 0;
   position: relative;
 }
 
 .title {
   font-size: 2rem;
   color: var(--font-color);
-  margin: 2rem; /* Remove default margin */
+  margin: 2rem;
   text-align: left;
   align-self: flex-start;
+}
+
+.contactInfo{
+  margin-top: 60px;
+  margin-left: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+
+}
+
+.contactInfo {
+  width: 100%;
+  margin-bottom: 2rem; /* Add spacing below contact info */
+}
+
+.contactInfo ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contactInfo li {
+  margin-bottom: 0.8rem;
+}
+
+.contactInfo a {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+.contactInfo a:hover {
+  text-decoration: underline;
 }
 
 .illustrationLiz{
