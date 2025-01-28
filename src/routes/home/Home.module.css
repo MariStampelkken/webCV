@@ -2,32 +2,31 @@
 .home {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Space out elements */
-  align-items: center; /* Center items horizontally */
-  height: 100vh; /* Full viewport height */
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
   padding: 2rem;
   position: relative;
 }
 
 .title {
   font-family: 'Special Elite', monospace;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--font-color);
-  text-shadow: 0 0 1rem var(--silver);
   margin: 0;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.2rem;
   white-space: nowrap;
   animation: typing 4s steps(30,end), blink-caret 0.75s step-end infinite;
 }
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from { width: 0% }
+  to { width: 20% }
 }
 
 .undertitle{
   font-family: 'Special Elite', monospace;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--font-color);
   margin-left: 0;
   text-align: left;
@@ -35,8 +34,7 @@
   letter-spacing: 0.5rem;
   white-space: nowrap;
   animation: typing 4s steps(30,end), blink-caret 0.75s step-end infinite;
-} 
-
+}
 
 .illustration {
   width: 600px;
@@ -45,34 +43,41 @@
   position: relative;
 }
 
-/* Responsive styles */
+@media (max-width: 950px) {
+  .undertitle{
+    margin-top:6rem;
+    font-size: 1.25rem;
+  }
+}
 @media (max-width: 768px) {
   .title {
     font-size: 1.75rem;
   }
   .undertitle{
+    margin-top: 4rem;
     font-size: 1.25rem;
   }
 
   .illustration {
-    width: 80%; /* Increase the percentage width on smaller screens */
-    max-width: none; /* Remove the max-width restriction */
+    width: 80%;
+    max-width: none;
   }
 }
 
 @media (max-width: 480px) {
   .title {
-    font-size: 1.5rem; /* Even smaller title size for very small screens */
+    font-size: 1.5rem;
   }
   .undertitle{
-    font-size: 1rem;
+    margin-top: 2rem;
+    font-size: 1.25rem;
   }
 
   .illustration {
-    width: 90%; /* Further increase width on extra small screens */
+    width: 90%;
   }
 
   .navbar {
-    margin-bottom: 0.5rem; /* Adjust this value as needed */
+    margin-bottom: 0.5rem;
   }
 }

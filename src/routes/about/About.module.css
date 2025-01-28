@@ -32,16 +32,16 @@
   width: 60%;
   margin-left: 2rem;
   margin-bottom: 0;
-  margin-top: -7rem;
+  margin-top: 2rem;
 }
 .description2{
   font-size: 1rem;
   color: var(--font-color);
   text-align: right;
   align-self: flex-start;
-  width: 60%;
+  width: 50%;
   margin-left: 10rem;
-  margin-top: -6rem;
+  margin-top: 2rem;
 }
 
 .description3{
@@ -51,11 +51,10 @@
   align-self: flex-start;
   width: 60%;
   margin-left: 2rem;
-  margin-bottom: 0;
-  margin-top: -7rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 
-/* Media query for smaller screens */
 @media (max-width: 950px) {
   .pictures {
     flex-direction: column;
@@ -86,11 +85,11 @@
 
 @media (max-width: 480px) {
   .title {
-    font-size: 2rem; /* Reduce title size on small screens */
+    font-size: 2rem;
   }
 
   .pictures {
-    gap: 0.5rem; /* Less space between images */
+    gap: 0.5rem;
     margin-top: 2rem;
   }
   .description1 {
@@ -102,7 +101,7 @@
     margin-top: 5rem;
   }
   .description2 {
-    width: 80%;
+    width: 70%;
     margin-left: 0;
     font-size: 0.7rem;
     margin-left: 5rem;

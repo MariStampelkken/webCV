@@ -16,7 +16,7 @@ const About: React.FC = () => {
         <b>I love getting creative.</b> Whether it’s through art, photography, or music to relax, or to use it in combination with my code! I also enjoy being outdoors, and you’ll often find me hiking to recharge or spending time with my friends and family.
         </p>
         <p className={styles.description3}>
-        <b>A few fun fact about me:</b> I spent a year in Rome on an exchange program, which not only made me a better programmer but also a devoted pizza enthusiast. I love to travel. I love my cat Liz, seen in the photo below. And I have met Taylor Swift.
+        <b>A few fun fact about me:</b> I spent a year in Rome on an exchange program, which not only made me a better programmer but also a devoted pizza enthusiast. I love to travel. I love my cat Liz, seen in the photo below. And I have met Taylor Swift, how cool is that?!
         </p>
 
       <div className={styles.pictures}>
