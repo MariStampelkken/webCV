@@ -4,11 +4,11 @@ import { ContactInfo, Skill, Experience, Education, Project } from '../../types'
 import ProfilePicture from "../../illustrations/CVPicture.jpeg";
 import styles from './cvComponent.module.css';
 
-const contactInfo: ContactInfo = {
-  email: 'maristamp@hotmail.no',
-  linkedIn: 'https://www.linkedin.com/in/mari-stampeløkken-017901238/',
-  github: 'https://github.com/MariStampelkken',
-};
+// const contactInfo: ContactInfo = {
+//   email: 'maristamp@hotmail.no',
+//   linkedIn: 'https://www.linkedin.com/in/mari-stampeløkken-017901238/',
+//   github: 'https://github.com/MariStampelkken',
+// };
 
 const skills: Skill[] = [
   { name: 'TypeScript' },
@@ -84,12 +84,12 @@ const CVComponent: React.FC = () => {
         </div>
       </header>
 
-      <section id="contact-info">
+      {/* <section id="contact-info">
         <h2> </h2>
         <p>Email: <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a></p>
         <p>LinkedIn: <a href={contactInfo.linkedIn} target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
         <p>GitHub: <a href={contactInfo.github} target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
-      </section>
+      </section> */}
 
       <section id="education">
         <h2>Education</h2>
