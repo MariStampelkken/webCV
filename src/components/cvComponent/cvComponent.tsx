@@ -1,33 +1,64 @@
 // CV.tsx
 import React from 'react';
 import { ContactInfo, Skill, Experience, Education, Project } from '../../types';
+import ProfilePicture from "../../illustrations/CVPicture.jpeg";
+import styles from './cvComponent.module.css';
 
 const contactInfo: ContactInfo = {
-  email: 'your.email@example.com',
-  linkedIn: 'https://www.linkedin.com/in/yourprofile',
-  github: 'https://github.com/yourusername',
+  email: 'maristamp@hotmail.no',
+  linkedIn: 'https://www.linkedin.com/in/mari-stampeløkken-017901238/',
+  github: 'https://github.com/MariStampelkken',
 };
 
 const skills: Skill[] = [
-  { name: 'JavaScript' },
-  { name: 'React' },
   { name: 'TypeScript' },
+  { name: 'React' },
+  { name: 'Java' },
+  { name: 'Python' },
+  { name: 'JavaScript' },
+  { name: 'CSS' },
+  { name: 'HTML' },
+  { name: 'Git' },
+  { name: 'Database (MySQL, MongoDB, Neo4j)'},
+  { name: 'REST API, GraphQL' },
 ];
 
 const experiences: Experience[] = [
   {
-    title: 'Frontend Developer',
-    company: 'Tech Company',
-    date: 'Jan 2020 - Present',
-    description: 'Developed and maintained the front end of the company’s main product.',
+    title: 'Waitress',
+    company: 'Thon Partner Hotel Otta',
+    date: 'Sept 2015 - dd',
+    description: ''
+  },
+  {
+    title: 'Field Recruiter (feltverver)',
+    company: 'Stiftelsen Norsk Luftambulanse',
+    date: 'March 2022 - June 2022',
+    description:
+      '',
   },
 ];
 
 const education: Education[] = [
   {
-    degree: 'Bachelor of Science in Computer Science',
-    institution: 'University Name',
-    graduationYear: '2020',
+    degree: 'Bachelor in Informatics',
+    institution: 'NTNU Gløshaugen',
+    graduationYear: 'Aug 2021 - Present',
+  },
+  {
+    degree: 'Exchange program',
+    institution: 'La Sapienza, Roma',
+    graduationYear: 'Sept 2022 - July 2023',
+  },
+  {
+    degree: 'One-Year Psychology Program',
+    institution: 'NTNU Dragvoll',
+    graduationYear: 'Aug 2020 - June 2021',
+  },
+  {
+    degree: 'Bachelor in Radiography',
+    institution: 'NTNU Øya',
+    graduationYear: 'Aug 2019 - June 2020',
   },
 ];
 
@@ -42,13 +73,19 @@ const projects: Project[] = [
 const CVComponent: React.FC = () => {
   return (
     <div className="cv">
-      <header>
-        <h1>Your Name</h1>
-        <p>Job Title or Short Tagline</p>
+      <header className={styles.header}>
+        <div className={styles.headerText}>
+          <h1>Mari Stampeløkken </h1>
+          <p>Developer | Informatics student </p>
+        </div>
+
+        <div className={styles.profilePic}>
+          <img src={ProfilePicture} alt="Profile picture of Mari" className={styles.pp}/>
+        </div>
       </header>
 
       <section id="contact-info">
-        <h2>Contact Information</h2>
+        <h2> </h2>
         <p>Email: <a href={`mailto:${contactInfo.email}`}>{contactInfo.email}</a></p>
         <p>LinkedIn: <a href={contactInfo.linkedIn} target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
         <p>GitHub: <a href={contactInfo.github} target="_blank" rel="noopener noreferrer">GitHub Profile</a></p>
@@ -84,7 +121,7 @@ const CVComponent: React.FC = () => {
         </ul>
       </section>
 
-      <section id="projects">
+      {/* <section id="projects">
         <h2>Projects</h2>
         {projects.map((project, index) => (
           <div className="project" key={index}>
@@ -92,7 +129,7 @@ const CVComponent: React.FC = () => {
             <p>{project.description} <a href={project.link} target="_blank" rel="noopener noreferrer">GitHub link</a></p>
           </div>
         ))}
-      </section>
+      </section> */}
     </div>
   );
 };
